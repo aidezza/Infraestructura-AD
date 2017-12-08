@@ -7,7 +7,7 @@ DIRNAME     = File.basename(CURRENT_DIR)
 
 hosts = [
     #10.10.10.1 is configured as bridged between the host and 10.10.1.x guests
-    {
+  {
         :name  => "haproxy-01.example.com",
         :box   => "minos/core-16.04",
         :ram   => "256", :cpus  => "1",
@@ -25,23 +25,52 @@ hosts = [
         :ram   => "256", :cpus  => "1",
         :ip    => "10.10.10.13",
     },
-    {
-        :name  => "nginx-01.example.com",
+{
+        :name  => "haproxy-04.example.com",
         :box   => "minos/core-16.04",
         :ram   => "256", :cpus  => "1",
         :ip    => "10.10.10.14",
     },
-    {
-        :name  => "nginx-02.example.com",
+{
+        :name  => "haproxy-05.example.com",
         :box   => "minos/core-16.04",
         :ram   => "256", :cpus  => "1",
         :ip    => "10.10.10.15",
     },
     {
+        
+
+        
+{
         :name  => "nginx-03.example.com",
         :box   => "minos/core-16.04",
         :ram   => "256", :cpus  => "1",
         :ip    => "10.10.10.16",
+    },
+
+        :name  => "nginx-01.example.com",
+        :box   => "minos/core-16.04",
+        :ram   => "256", :cpus  => "1",
+        :ip    => "10.10.10.17",
+    },
+    {
+        :name  => "nginx-02.example.com",
+        :box   => "minos/core-16.04",
+        :ram   => "256", :cpus  => "1",
+        :ip    => "10.10.10.18",
+    },
+    {
+        :name  => "nginx-03.example.com",
+        :box   => "minos/core-16.04",
+        :ram   => "256", :cpus  => "1",
+        :ip    => "10.10.10.19",
+    },
+
+{
+        :name  => "nginx-03.example.com",
+        :box   => "minos/core-16.04",
+        :ram   => "256", :cpus  => "1",
+        :ip    => "10.10.10.20",
     },
 ]
 
